@@ -1,0 +1,12 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# PowerShell scripts contain Chinese text and MUST keep a UTF-8 BOM,
+# otherwise PowerShell 5.1 misreads them as cp950 (mojibake + syntax errors).
+[*.ps1]
+charset = utf-8-bom

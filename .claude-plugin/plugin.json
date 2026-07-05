@@ -1,0 +1,14 @@
+{
+  "name": "hook-notify",
+  "displayName": "Windows Notifications",
+  "version": "0.1.1",
+  "description": "Windows-native toast + sound notifications when Claude Code finishes a response (Stop) or needs your input (Notification). Zero-dependency, Windows-only.",
+  "author": {
+    "name": "Harry",
+    "url": "https://github.com/harry18456"
+  },
+  "homepage": "https://github.com/harry18456/cc-hook-notify",
+  "repository": "https://github.com/harry18456/cc-hook-notify",
+  "license": "MIT",
+  "keywords": ["notification", "toast", "windows", "hooks", "claude-code", "powershell"]
+}

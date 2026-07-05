@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File \"${CLAUDE_PLUGIN_ROOT}/scripts/hook-notify.ps1\" -HookEvent Stop",
+            "async": true,
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File \"${CLAUDE_PLUGIN_ROOT}/scripts/hook-notify.ps1\" -HookEvent Notification",
+            "async": true,
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+# Normalize line endings for text files by default.
+* text=auto
+
+# PowerShell scripts carry a UTF-8 BOM and Chinese text.
+# Treat them as binary so git never rewrites the BOM or line endings across clones.
+*.ps1 -text
